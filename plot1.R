@@ -13,7 +13,7 @@
 ##                      the text file contained within will not be
 ##                      deleted. The data is around 150 MB. 
 
-plot1Data <- function(del = FALSE) {
+plot1 <- function(del = FALSE) {
         
         ## Check if source data already exists in working directory
         if(!file.exists("household_power_consumption.txt")) {
