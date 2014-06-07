@@ -13,7 +13,11 @@
 ##                      data used to generate the plot will be deleted
 ##                      from hard disk, otherwise both the zip file and
 ##                      the text file contained within will not be
-##                      deleted. The data is around 150 MB. 
+##                      deleted. The data is around 150 MB.
+##
+##      This function requires the package "sqldf" in order to function
+##      properly. Ensure it is installed prior to running any plotting
+##      functions.
 
 load.proj1 <- function(del = FALSE) {
         
@@ -23,7 +27,7 @@ load.proj1 <- function(del = FALSE) {
                 
                 ## Download source data file from the web and saves temp zip
                 
-                download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", 
+                download.file("http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", 
                               "temp.zip")
                 message("Unzipping temp.zip...")
                 unzip("temp.zip")    
