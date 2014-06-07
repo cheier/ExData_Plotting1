@@ -34,7 +34,7 @@ plot4 <- function(del = FALSE) {
             antialias = "default")
         
         ## For better readability, all data and time data will be
-        ## loaded into the datetime matrix
+        ## loaded into the datetime vector
         
         datetime <- strptime(paste(DT$Date, DT$Time), 
                              format = "%d/%m/%Y %H:%M:%S")
